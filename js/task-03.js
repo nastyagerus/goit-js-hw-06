@@ -30,7 +30,7 @@ const listImages = document.querySelector(".gallery");
 
 const makeImageList = images
   .map(
-    ({ url, alt }) => `<li> <img scr="${url}" alt="${alt}" width=640 /> </li>`
+    ({ url, alt }) => `<li> <img src="${url}" alt="${alt}" width=640 /> </li>`
   )
   .join("");
 

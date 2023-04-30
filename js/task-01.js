@@ -1,5 +1,11 @@
-const listItems = document.querySelector("#categories");
-console.log(`Number of categories: ${listItems.children.length}`);
+const list = document.querySelector("#categories");
+const listItems = list.children;
+console.log(listItems);
+console.log(`Number of categories: ${listItems.length}`);
+
+const listContent = document.querySelectorAll(".item");
+const listContentChildren = listContent.children;
+console.log(listContent);
 
 const itemName = document.querySelectorAll("h2");
 // console.log(itemName);
@@ -22,3 +28,5 @@ const getItemQuantity = (array) => {
 getTitleNames(itemName);
 
 getItemQuantity(itemQuantity);
+
+getTitleNames(listContent);
